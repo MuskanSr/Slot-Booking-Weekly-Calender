@@ -1,0 +1,42 @@
+.header {
+    text-align: center;
+    padding: 6px;
+    background-color: rgba(137, 43, 226, 0.822);
+
+}
+
+.first{
+    padding: 5px;
+}
+.card-title {
+    text-align: center;
+}
+
+#container{
+    text-align: center;
+}
+
+#check{
+    display: inline-block;
+}
+
+input[type=checkbox] + label{
+    width: 350px;
+    height: 27px;
+    background-color: lightgreen;
+}
+
+input[type=checkbox]:hover + label{
+    width: 350px;
+    height: 27px;
+    background-color: yellow;
+}
+
+input[type=checkbox]:checked + label{
+    width: 350px;
+    height: 27px;
+    background-color: lightcoral;
+}
+
+
+
