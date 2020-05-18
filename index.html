@@ -6,7 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+      input[class=hold]+label {
+        color: rgb(218, 218, 30);
+      }
     
+      input[class=booked] +label {
+        color: lightcoral;
+      }
+    
+      </style>
 </head>
 <body>
     <div class="header">
@@ -25,7 +34,7 @@
             <div class="card-body">
               <h5 class="card-title">Monday</h5>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item"> <input type="checkbox" class="c1"> <label>Slot 1</label></li>
+                <li class="list-group-item"> <input type="checkbox" class="booked"  disabled> <label>Slot 1</label></li>
                 <li class="list-group-item"> <input type="checkbox" class="c2"> <label>Slot 2</label></li>
                 <li class="list-group-item"> <input type="checkbox" class="c3"> <label>Slot 3</label></li>
                 <li class="list-group-item"> <input type="checkbox" class="c4"> <label>Slot 4</label></li>
@@ -56,7 +65,7 @@
               <h5 class="card-title">Wednesday</h5>
               <ul class="list-group list-group-flush">
                 <li class="list-group-item"> <input type="checkbox" class="c1"> <label>Slot 1</label></li>
-                <li class="list-group-item"> <input type="checkbox" class="c2"> <label>Slot 2</label></li>
+                <li class="list-group-item"> <input type="checkbox" class="booked"  disabled> <label>Slot 2</label></li>
                 <li class="list-group-item"> <input type="checkbox" class="c3"> <label>Slot 3</label></li>
                 <li class="list-group-item"> <input type="checkbox" class="c4"> <label>Slot 4</label></li>   
               </ul>              
@@ -70,7 +79,7 @@
             <div class="card-body">
               <h5 class="card-title">Thursday</h5>
               <ul class="list-group list-group-flush">
-                <li class="list-group-item"> <input type="checkbox" class="c1"> <label>Slot 1</label></li>
+                <li class="list-group-item"> <input type="checkbox" class="hold" disabled> <label>Slot 1</label></li>
                 <li class="list-group-item"> <input type="checkbox" class="c2"> <label>Slot 2</label></li>
                 <li class="list-group-item"> <input type="checkbox" class="c3"> <label>Slot 3</label></li>
                 <li class="list-group-item"> <input type="checkbox" class="c4"> <label>Slot 4</label></li>  
@@ -87,7 +96,7 @@
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"> <input type="checkbox" class="c1"> <label>Slot 1</label></li>
                     <li class="list-group-item"> <input type="checkbox" class="c2"> <label>Slot 2</label></li>
-                    <li class="list-group-item"> <input type="checkbox" class="c3"> <label>Slot 3</label></li>
+                    <li class="list-group-item"> <input type="checkbox" class="booked" disabled> <label>Slot 3</label></li>
                     <li class="list-group-item"> <input type="checkbox" class="c4"> <label>Slot 4</label></li> 
                 </ul>     
                 <div class="row justify-content-center"><button type="button" class="btn btn-outline-info" disabled>Book</button></div>           
@@ -101,9 +110,9 @@
                 <h5 class="card-title">Saturday</h5>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item"> <input type="checkbox" class="c1"> <label>Slot 1</label></li>
-                    <li class="list-group-item"> <input type="checkbox" class="c2"> <label>Slot 2</label></li>
+                    <li class="list-group-item"> <input type="checkbox" class="c2" disabled> <label>Slot 2</label></li>
                     <li class="list-group-item"> <input type="checkbox" class="c3"> <label>Slot 3</label></li>
-                    <li class="list-group-item"> <input type="checkbox" class="c4"> <label>Slot 4</label></li>               
+                    <li class="list-group-item"> <input type="checkbox" class="hold" disabled> <label>Slot 4</label></li>               
                 </ul>
                 <div class="row justify-content-center"><button type="button" class="btn btn-outline-info" disabled>Book</button></div>
               </div>
